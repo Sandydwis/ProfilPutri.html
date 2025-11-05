@@ -1,0 +1,96 @@
+/* Font dan dasar warna */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #dfe9f3, #ffffff);
+  overflow-x: hidden;
+}
+
+/* Header dengan efek gradasi */
+.header-section {
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+}
+
+/* Foto profil di tengah */
+.foto-profil {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 6px solid #ffffff;
+  background-color: #fff;
+  transition: transform 0.4s ease, box-shadow 0.3s ease;
+}
+
+.foto-profil:hover {
+  transform: scale(1.08);
+  box-shadow: 0 8px 25px rgba(37, 117, 252, 0.4);
+}
+
+/* Tabel biodata */
+.table th {
+  background-color: #2575fc;
+  color: white;
+  width: 30%;
+}
+
+.table td {
+  color: #333;
+}
+
+/* Deskripsi */
+.deskripsi p {
+  text-align: justify;
+  color: #555;
+  line-height: 1.8;
+}
+
+/* Tombol media sosial */
+.btn-gradient {
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.btn-gradient:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 15px rgba(106, 17, 203, 0.4);
+}
+
+.btn-gradient-dark {
+  background: linear-gradient(90deg, #232526, #414345);
+  color: white;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.btn-gradient-dark:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 15px rgba(65, 67, 69, 0.4);
+}
+
+/* Footer */
+.footer-gradient {
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  box-shadow: 0 -2px 10px rgba(0,0,0,0.25);
+}
+
+/* Efek Animasi Fade-in */
+.fade-in {
+  opacity: 0;
+  transform: translateY(15px);
+  animation: fadeInUp 1s forwards;
+}
+
+.delay-1 { animation-delay: 0.3s; }
+.delay-2 { animation-delay: 0.6s; }
+.delay-3 { animation-delay: 0.9s; }
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
